@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+         #codex{
+             font-family:monospace;
+         }
+        </style>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <script type="text/javascript" src="./libs/jquery.min.js"></script>
+        <script src="../jquery.codex.js"></script>
+	<script>
+         $(document).ready(function(){
+
+
+             $("#do1").click(function(){
+                 $("#codex").codex({final_text: "Pee Kee Tup"});
+             });
+
+             $("#do2").click(function(){
+                 $("#codex2").codex({
+                     min_miliseconds: 80,
+                     max_miliseconds: 6000
+                 });                 
+             });
+             
+             
+         });
+	</script>
+    </head>
+    <body>
+	<h1 class="codex" id="codex">Blx blx blx</h1>
+        <button id="do1">Do</button>
+        <hr />
+        <h1 class="codex" id="codex2">Frax</h1>
+        <button id="do2">Do</button>
+    </body>
+</html>
