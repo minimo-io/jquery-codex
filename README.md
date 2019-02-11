@@ -3,11 +3,6 @@ jQuery Plugin for sodomizing texts for a given time. Check this <a href="https:/
 
 <h2>Usage</h2>
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 ```
 $("#do1").click(function(){
   $("#codex").codex({final_text: "Pee Kee Tup"});
