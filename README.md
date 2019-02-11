@@ -1,9 +1,9 @@
 # Codex jQuery Plugin
-jQuery Plugin for sodomizing texts for a given time. Check this <a href="https://minimo.io">homepage</a> for a demo.
+jQuery Plugin for sodomizing texts for a given time. Check this [homepage](https://minimo.io) for a demo.
 
 <h2>Usage</h2>
 
-```
+```javascript
 $("#do1").click(function(){
   $("#codex").codex({final_text: "Pee Kee Tup"});
 });
