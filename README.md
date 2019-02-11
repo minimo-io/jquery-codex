@@ -2,18 +2,7 @@
 jQuery Plugin for sodomizing texts for a given time. Check this <a href="https://minimo.io">homepage</a> for a demo.
 
 <h2>Usage</h2>
-```javascript
-$("#do1").click(function(){
-  $("#codex").codex({final_text: "Pee Kee Tup"});
-});
 
-$("#do2").click(function(){
-   $("#codex2").codex({
-       min_miliseconds: 80,
-       max_miliseconds: 6000
-   });
-});
-```
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
