@@ -1,10 +1,10 @@
 # Codex jQuery Plugin
-jQuery Plugin for sodomizing texts for a given time. Check <a href="https://minimo.io">homepage</a> for a demo.
+jQuery Plugin for sodomizing texts for a given time. Check this <a href="https://minimo.io">homepage</a> for a demo.
 
 <h2>Usage</h2>
 ```javascript
 $("#do1").click(function(){
-   $("#codex").codex({final_text: "Pee Kee Tup"});
+  $("#codex").codex({final_text: "Pee Kee Tup"});
 });
 
 $("#do2").click(function(){
@@ -13,6 +13,11 @@ $("#do2").click(function(){
        max_miliseconds: 6000
    });
 });
+```
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
 ```
 
 <h2>Changelog</h2>
