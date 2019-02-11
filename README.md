@@ -16,16 +16,10 @@ $("#do2").click(function(){
 });
 ```
 
-<h2>Changelog</h2>
-<h3>Version 1.0.3 - 2015-10-16</h3>
-<ul class="task-list">
-<li>Minor tweaks</li>
-</ul>
-<h3>Version 1.0.0 - 2015-05-1</h3>
-<ul class="task-list">
-<li>Change version number; <a href="https://docs.npmjs.com/getting-started/semantic-versioning">semantic versioning</a></li>
-</ul>
-<h3>Version 0.1 - 2014-11-07</h3>
-<ul class="task-list">
-<li>First release</li>
-</ul>
+## Changelog
+### Version 1.0.3 - 2015-10-16
+  * Minor tweaks
+### Version 1.0.0 - 2015-05-1
+  * Change version number; [semantic versioning](https://docs.npmjs.com/getting-started/semantic-versioning)
+### Version 0.1 - 2014-11-07
+  * First release
