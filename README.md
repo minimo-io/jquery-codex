@@ -1,5 +1,5 @@
 # Codex jQuery Plugin
-jQuery plugin for sodomizing texts for a given time. Check this [homepage](https://minimo.io) for a demo.
+jQuery plugin for sodomizing texts for a given time; check this [homepage](https://minimo.io) for a demo.
 
 <h2>Usage</h2>
 
