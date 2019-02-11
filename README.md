@@ -11,7 +11,7 @@ $("#do2").click(function(){
    $("#codex2").codex({
        min_miliseconds: 80,
        max_miliseconds: 6000
-   });                 
+   });
 });
 ```
 
