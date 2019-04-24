@@ -14,7 +14,25 @@ $("#do2").click(function(){
        duration: 6000
    });
 });
+
+/**
+  * user the effect 'charbychar' by which each character is revealed one by one
+  * in this effect the total duration is automatically calculated with the reveal value
+  */
+$("#do4").click(function(){
+  $("#codex4").codex({
+      effect: "charbychar",
+      keep_whitespaces: false, // sodomize also whitespaces
+      speed: 50, // speed in which random chars will appear in letters not yet revelaed
+      reveal: 100 // number of miliseconds that will take for a single char reveal
+  });
+});
 ```
+## TODO
+* TODO
+* Be able to define a specific charset as base for the random chars
+* Create the typewriter effect, similar than 'charbychar' but all non-revealed text is blank
+* Use a single sodomizer function for all effects when possible (remove duplicated code)
 
 ## Changelog
 ### Version 1.0.5 - 2018-04-23

@@ -26,8 +26,21 @@
                    // class invokation
                    $("#do3").click(function(){
                      $(".codex-cls").codex({
-                         speed: 50,
+                         speed: 40,
                          duration: 3000
+                     });
+                   });
+
+                   /**
+                     * user the effect 'charbychar' by which each character is revealed one by one
+                     * in this effect the total duration is automatically calculated with the reveal value
+                     */
+                   $("#do4").click(function(){
+                     $("#codex4").codex({
+                         effect: "charbychar",
+                         keep_whitespaces: false, // sodomize also whitespaces
+                         speed: 50, // speed in which random chars will appear in letters not yet revelaed
+                         reveal: 100 // number of miliseconds that will take for a single char reveal
                      });
                    });
 
@@ -44,5 +57,8 @@
       <h1 class="codex codex-cls">Walt Whitman</h1>
       <h1 class="codex codex-cls">Egon Schiele</h1>
       <button id="do3">Do</button>
+      <hr />
+      <h1 class="codex" id="codex4">Hunter S. Thompson</h1>
+      <button id="do4">Do</button>
     </body>
 </html>
