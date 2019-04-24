@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+         .codex{
+             font-family:monospace;
+         }
+        </style>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <script type="text/javascript" src="./libs/jquery.min.js"></script>
+        <script src="../jquery.codex.js"></script>
+      	<script>
+               $(document).ready(function(){
+
+
+                   $("#do1").click(function(){
+                       $("#codex").codex({ final_text: "Jimmy Breslin" });
+                   });
+
+                   $("#do2").click(function(){
+                       $("#codex2").codex({
+                           speed: 80,
+                           duration: 6000
+                       });
+                   });
+                   // class invokation
+                   $("#do3").click(function(){
+                     $(".codex-cls").codex({
+                         speed: 50,
+                         duration: 3000
+                     });
+                   });
+
+               });
+      	</script>
+    </head>
+    <body>
+    	<h1 class="codex" id="codex">Jimmy Breslin</h1>
+      <button id="do1">Do</button>
+      <hr />
+      <h1 class="codex" id="codex2">Roberto Arlt</h1>
+      <button id="do2">Do</button>
+      <hr />
+      <h1 class="codex codex-cls">Walt Whitman</h1>
+      <h1 class="codex codex-cls">Egon Schiele</h1>
+      <button id="do3">Do</button>
+    </body>
+</html>

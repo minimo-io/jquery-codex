@@ -1,9 +1,12 @@
 /**
  * Codex: jQuery Plugin for sodomizing texts for a given time.
  *
- * @author: @tuxxus
- * @version: 1.0.4
- * @url: http://www.tuxxus.com/projects/codex/
+ * @author: @nicolas_ea
+ * @version: 1.0.5
+ * @url: https://github.com/nicolas-ea/jquery-codex
+ *
+ * TODO
+ * - be able to define charset
  */
 
 ;(function($) {
@@ -18,10 +21,9 @@
 
 
         var defaults = {
-            min_miliseconds : 100,
-            max_miliseconds : 3000,
+            speed : 100,
+            duration : 3000,
             final_text: $element.text(),
-
             total_iterations : 0,
             interval : -1
         }
@@ -43,9 +45,9 @@
                 el.text( codex_change_each_position( str ) );
 
                 // time controller
-                plugin.settings.total_iterations += plugin.settings.min_miliseconds;
+                plugin.settings.total_iterations += plugin.settings.speed;
                 //console.log( plugin.settings.total_iterations );
-                if ( plugin.settings.total_iterations >= plugin.settings.max_miliseconds ) {
+                if ( plugin.settings.total_iterations >= plugin.settings.duration ) {
                     clearInterval(plugin.settings.interval);
                     plugin.settings.total_iterations = 0;
                     plugin.settings.interval = -1;
@@ -53,7 +55,7 @@
                 }
 
 
-            }, plugin.settings.min_miliseconds );
+            }, plugin.settings.speed );
 
 
 
