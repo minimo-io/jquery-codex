@@ -16,7 +16,7 @@ $("#do2").click(function(){
 });
 
 /**
-  * this examples uses the effect 'charbychar' by which each character is revealed one by one
+  * this example uses the effect 'charbychar' by which each character is revealed one by one
   * in this effect the total duration is automatically calculated with the reveal value
   */
 $("#do4").click(function(){
