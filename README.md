@@ -29,7 +29,6 @@ $("#do4").click(function(){
 });
 ```
 ## TODO
-* TODO
 * Be able to define a specific charset as base for the random chars
 * Create the typewriter effect, similar than 'charbychar' but all non-revealed text is blank
 * Use a single sodomizer function for all effects when possible (remove duplicated code)
