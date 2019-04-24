@@ -10,13 +10,15 @@ $("#do1").click(function(){
 
 $("#do2").click(function(){
    $("#codex2").codex({
-       min_miliseconds: 80,
-       max_miliseconds: 6000
+       speed: 80,
+       duration: 6000
    });
 });
 ```
 
 ## Changelog
+### Version 1.0.5 - 2018-04-23
+  * Better param names
 ### Version 1.0.3 - 2015-10-16
   * Minor tweaks
 ### Version 1.0.0 - 2015-05-1
