@@ -24,7 +24,7 @@ $("#do4").click(function(){
       effect: "charbychar",
       keep_whitespaces: false, // sodomize also whitespaces
       speed: 50, // speed in which random chars will appear in letters not yet revelaed
-      reveal: 100 // number of miliseconds that will take for a single char reveal
+      reveal: 100 // number of miliseconds that will take for a single char to reveal
   });
 });
 ```
@@ -35,6 +35,9 @@ $("#do4").click(function(){
 * Use a single sodomizer function for all effects when possible (remove duplicated code)
 
 ## Changelog
+### Version 1.1.0 - 2018-04-23
+  * 'charbychar' effect introduced, by which each character is revelaed one at a time
+  * 'keep_whitespaces' config value added, so it's possible to choose whether to also sodomize white spaces or not
 ### Version 1.0.5 - 2018-04-23
   * Better param names
 ### Version 1.0.3 - 2015-10-16
