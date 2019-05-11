@@ -1,7 +1,7 @@
 # Codex jQuery Plugin
 jQuery plugin for sodomizing texts for a given time. Check the [demo page](https://minimo.io/en/2019/7/).
 
-![SCREENSHOT](https://i.imgur.com/ED1MrXm.gif)
+![SCREENSHOT](https://i.imgur.com/FpohB6c.gif)
 
 <h2>Usage</h2>
 
