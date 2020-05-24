@@ -29,13 +29,27 @@ $("#do4").click(function(){
       reveal: 100 // number of miliseconds that will take for a single char to reveal
   });
 });
+
+/**
+  * Typewriter effect: similar than 'charbychar' but all non-revealed text is blank.
+  */
+$("#do5").click(function(){
+  $("#codex5").codex({
+    effect: "typewriter",
+    speed: 50,
+    reveal: 50
+  });
+});
+
 ```
 ## TODO
-* Be able to define a specific charset as base for the random chars
-* Create the typewriter effect, similar than 'charbychar' but all non-revealed text is blank
+* Create the typewriter effect,
 * Use a single sodomizer function for all effects when possible (remove duplicated code)
+* Create a callback function to trigger at the end of the effect.
 
 ## Changelog
+### Version 1.1.1 - 2020-05-24
+  * 'typewriter' effect introduced. Similar than 'charbychar' but all non-revealed text is blank
 ### Version 1.1.0 - 2018-04-23
   * 'charbychar' effect introduced, by which each character is revelaed one at a time
   * 'keep_whitespaces' config value added, so it's possible to choose whether to also sodomize white spaces or not

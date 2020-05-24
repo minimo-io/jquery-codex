@@ -2,7 +2,7 @@
  * Codex: jQuery Plugin for sodomizing texts for a given time.
  *
  * @author: @nicolas_ea
- * @version: 1.1.0
+ * @version: 1.1.1
  * @url: https://github.com/nicolas-ea/jquery-codex
  *
  */
@@ -19,7 +19,7 @@
 
 
         var defaults = {
-            effect : "allofasudden", // charbychar || allofasudden
+            effect : "allofasudden", // charbychar || allofasudden || typewriter
             keep_whitespaces : true, // wheter keep whitespaces or fill them also with a random char
             speed : 100, // speed in which random chars will appear in letters not yet revelaed
             duration : 3000, // in some effects you can specify the total duration in other it is auto calculated
@@ -41,7 +41,10 @@
 
 
 
-            if ( plugin.settings.effect == "charbychar") {
+            if (
+              plugin.settings.effect == "charbychar"
+            || plugin.settings.effect == "typewriter"
+            ) {
               var pos_limit = 0; // only randomize text from here to the end
               var pos_total = str.length;
               var internal_char_reveal_counter = 0;
@@ -50,7 +53,7 @@
               plugin.settings.interval = setInterval( function(){
 
                   // char changer effect
-                  el.text( sodomizer_char_by_char( str, pos_limit ) );
+                  el.text( sodomizer_char_by_char( str, pos_limit,  plugin.settings.effect) );
 
                   // time controller
                   plugin.settings.total_iterations += plugin.settings.speed;
@@ -132,7 +135,7 @@
         /**
          * change the original revealing characters one by one
          */
-        var sodomizer_char_by_char = function(s, poslimit){
+        var sodomizer_char_by_char = function(s, poslimit, effect){
           var ret_string = "";
           var fixed_chars = s.substr(0, poslimit);
 
@@ -143,6 +146,7 @@
                 ret_string += codex_get_random_char(33, 126);
               }
           }
+          if (effect == "typewriter") ret_string = "|";
           return fixed_chars + ret_string;
         }
 

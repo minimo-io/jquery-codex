@@ -7,8 +7,7 @@
              font-family:monospace;
          }
         </style>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-        <script type="text/javascript" src="./libs/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../jquery.codex.js"></script>
       	<script>
                $(document).ready(function(){
@@ -36,15 +35,23 @@
                      * user the effect 'charbychar' by which each character is revealed one by one
                      * in this effect the total duration is automatically calculated with the reveal value
                      */
+                     var do_charbychar = function(){
+                       $("#codex4").codex({
+                           effect: "charbychar",
+                           keep_whitespaces: false, // sodomize also whitespaces
+                           speed: 50, // speed in which random chars will appear in letters not yet revelaed
+                           reveal: 100 // number of miliseconds that will take for a single char reveal
+                       });
+                     }
 
-                     $("#codex4").codex({
-                         effect: "charbychar",
-                         keep_whitespaces: false, // sodomize also whitespaces
-                         speed: 50, // speed in which random chars will appear in letters not yet revelaed
-                         reveal: 100 // number of miliseconds that will take for a single char reveal
-                     });
-                     $("#do4").click(function(){
-                       document.location.reload();
+                     $("#do4").click(function(){ do_charbychar(); });
+                     // typewriter effect
+                     $("#do5").click(function(){
+                       $("#codex5").codex({
+                         effect: "typewriter",
+                         speed: 50,
+                         reveal: 50
+                       });
                      });
 
                });
@@ -62,6 +69,9 @@
       <button id="do3">Do</button>
       <hr />
       <h1 class="codex" id="codex4">Hunter S. Thompson</h1>
-      <button id="do4">reload page</button>
+      <button id="do4">char by char</button>
+      <hr />
+      <h1 class="codex" id="codex5">Thomas Kennerly Wolfe Jr.</h1>
+      <button id="do5">Typewriter</button>
     </body>
 </html>
