@@ -1,9 +1,9 @@
 /**
  * Codex: jQuery Plugin for sodomizing texts for a given time.
  *
- * @author: @nicolas_ea
+ * @author: @minimo-io
  * @version: 1.1.1
- * @url: https://github.com/nicolas-ea/jquery-codex
+ * @url: https://github.com/minimo-io/jquery-codex
  *
  */
 
