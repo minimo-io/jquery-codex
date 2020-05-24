@@ -43,7 +43,6 @@ $("#do5").click(function(){
 
 ```
 ## TODO
-* Create the typewriter effect,
 * Use a single sodomizer function for all effects when possible (remove duplicated code)
 * Create a callback function to trigger at the end of the effect.
 
